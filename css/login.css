@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #000;
+    font-weight: 300;
+    position: relative;
+    outline:0 !important;
+    text-decoration: none;
+    cursor: initial;
+}
+:hover,:active,:focus{
+    outline:0 !important;
+    background: inherit !important;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    min-width: 600px;
+}
+body{
+    background: linear-gradient(#086A87,#A3BECB,#83A1AF);
+}
+header, footer{
+    display: block;
+    font-size: 0;
+    width: 100%;
+}
+header a, footer a{
+    color: #FFF;
+}
+
+header a:hover, footer a:hover{
+    color: #CCC;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.left-side,.right-side{
+    display: inline-block;
+    width:45%;
+    padding: 10px 2.5%;
+    text-align: left;
+    color: #FFFFFF;
+}
+.right-side{
+    text-align: right;
+}
+
+#login{
+    width:20em;
+    background: #FFFFFF;
+    top:50%;
+    box-shadow: 0 0 1em #A3BECB;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5em;
+    border-radius: 2em;
+    margin-top: -15em;
+
+    -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.3s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.3s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+}
+#login h3{
+    font-size: 2em;
+    text-align: center;
+    color: #7190A0;
+}
+#login h3 img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+#message{
+    padding: .5em 0 0 0;
+    color: deeppink;
+    text-align: center;
+}
+form{
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+}
+input{
+    padding: .5em;
+    width: 100%;
+    border-bottom: 1px solid #83A1AF;
+}
+input#login-btn{
+    border : 1px solid #83A1AF;
+    color:#83A1AF;
+    border-radius: 50%;
+    padding:0;
+    font-size: 1em;
+    text-align: center;
+    width:2em;
+    height:2em;
+    margin-top: .25em;
+    cursor: pointer;
+    float: right;
+}
+
+input#login-btn:hover{
+    color: #FFF;
+    background: #83A1AF;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+input[type="checkbox"]{
+    display: inline-block;width: 20px;
+    margin-top: 2em;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-80px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-80px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
